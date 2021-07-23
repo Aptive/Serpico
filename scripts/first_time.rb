@@ -257,7 +257,7 @@ puts "Creating self-signed SSL certificate, you should really have a legitimate 
 
 name = "/C=US/ST=MD/L=MD/O=MD/CN=serpico"
 ca   = OpenSSL::X509::Name.parse(name)
-key = OpenSSL::PKey::RSA.new(1024)
+key = OpenSSL::PKey::RSA.new(2048)
 
 crt = OpenSSL::X509::Certificate.new
 crt.version = 2
